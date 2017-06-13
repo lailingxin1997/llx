@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:descendantFocusability="blocksDescendants">
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:textSize="15dp"
+        android:text="category"
+        android:gravity="center"
+        android:focusable="false"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:id="@+id/tv_category"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_toEndOf="@id/tv_category"
+        android:gravity="center"
+        android:maxLines="1"
+        android:ellipsize="marquee"
+        android:textSize="30dp"
+        android:focusable="false"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:text="costTitle"
+        android:layout_toRightOf="@id/tv_category" />
+
+    <TextView
+        android:id="@+id/tv_cost"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_alignParentRight="true"
+        android:focusable="false"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:text="30"/>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:maxLines="1"
+        android:ellipsize="marquee"
+        android:text="costDate"
+        android:focusable="false"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/tv_title"
+        android:layout_toRightOf="@id/tv_title" />
+
+
+</RelativeLayout>

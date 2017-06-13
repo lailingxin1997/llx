@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c2a071">
+
+
+    <EditText
+        android:background="@drawable/shape_corner"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:inputType="textPersonName"
+        android:hint="天气"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textColorHint="#6ba97514"
+        android:ems="10"
+        android:id="@+id/fullweather"
+        android:shadowRadius="3.0"
+        android:layout_alignBottom="@+id/created"
+        android:layout_alignLeft="@+id/fullcontent"
+        android:layout_alignStart="@+id/fullcontent"
+        android:layout_alignTop="@+id/created" />
+
+    <EditText
+        android:background="@drawable/shape_corner"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:hint="title"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textColorHint="#6ba97514"
+        android:ems="10"
+        android:id="@+id/fulltitle"
+        android:layout_above="@+id/fullweather"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:background="@drawable/shape_corner"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:inputType="date"
+        android:ems="10"
+        android:hint="日期"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textColorHint="#6ba97514"
+        android:id="@+id/created"
+        android:layout_marginTop="66dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/fullcontent"
+        android:layout_alignEnd="@+id/fullcontent"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            />
+        <Button
+
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/backdiary"
+            android:layout_alignTop="@+id/savebut"
+            android:layout_alignLeft="@+id/created"
+            android:layout_alignStart="@+id/created"
+            android:layout_weight="1"
+            android:text="返回"
+            android:background="@drawable/thebutton"/>
+        <View
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            />
+        <Button
+
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/camera"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/fulltitle"
+            android:layout_toStartOf="@+id/fulltitle"
+            android:layout_weight="1"
+            android:background="@drawable/thebutton"
+            android:text="照片" />
+        <View
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            />
+
+        <Button
+            android:text="保存"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/savebut"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/fullcontent"
+            android:layout_alignEnd="@+id/fullcontent"
+            android:layout_weight="1"
+            android:background="@drawable/thebutton"/>
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            />
+        <Button
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/deletephoto"
+            android:layout_alignBaseline="@+id/backdiary"
+            android:layout_alignBottom="@+id/backdiary"
+            android:layout_alignRight="@+id/fullweather"
+            android:layout_alignEnd="@+id/fullweather"
+            android:layout_weight="1"
+            android:background="@drawable/thebutton"
+            android:text="图片删除" />
+        <View
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/fullcontent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/allbutton"
+            android:id="@+id/imageView3"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <EditText
+        android:background="@drawable/shape_corner"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:gravity="start"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:hint="日记内容。。。。"
+        android:textSize="20dp"
+
+        android:textColorHint="#6ba97514"
+        android:id="@+id/fullcontent"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/fullweather"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/paintcanvas"
+        android:id="@+id/imageView6" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <View
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            />
+        <Button
+            android:text="清空"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/paintback"
+            android:layout_toLeftOf="@+id/paintback"
+            android:layout_toStartOf="@+id/paintback"
+            android:id="@+id/clean"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="返回"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/savePaint"
+            android:layout_toLeftOf="@+id/savePaint"
+            android:layout_toStartOf="@+id/savePaint"
+            android:id="@+id/paintback"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="保存"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/paint"
+            android:layout_toLeftOf="@+id/paint"
+            android:layout_toStartOf="@+id/paint"
+            android:id="@+id/savePaint"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="画笔"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/eraser"
+            android:layout_toLeftOf="@+id/eraser"
+            android:layout_toStartOf="@+id/eraser"
+            android:id="@+id/paint"
+            android:layout_weight="1" />
+        <Button
+            android:text="大小"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/paintStroke"
+            android:layout_toStartOf="@+id/paintStroke"
+            android:id="@+id/paintStroke"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="颜色"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/pickColor"
+            android:layout_toStartOf="@+id/pickColor"
+            android:id="@+id/pickColor"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="橡皮"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eraser"
+            android:layout_alignBaseline="@+id/paintStroke"
+            android:layout_alignBottom="@+id/paintStroke"
+            android:layout_toLeftOf="@+id/paintStroke"
+            android:layout_toStartOf="@+id/paintStroke"
+            android:layout_weight="1" />
+        <View
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

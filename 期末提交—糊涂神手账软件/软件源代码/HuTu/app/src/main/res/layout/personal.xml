@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c2a071">
+
+    <Button
+        android:text="涂鸦"
+        android:textSize="30dp"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:textStyle="bold"
+        android:textColor="#544221"
+        android:paddingBottom="30dp"
+        android:id="@+id/paintBut"
+        android:background="@drawable/section"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:background="@drawable/backlog"
+        android:id="@+id/backtoLog" />
+
+    <TextView
+        android:text="糊涂神"
+        android:textSize="30dp"
+        android:textColor="#71622d"
+        android:gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/backtoLog"
+        android:layout_alignLeft="@+id/paintBut"
+        android:layout_alignStart="@+id/paintBut"
+        android:layout_marginTop="22dp"
+        android:id="@+id/userName" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/kuang"
+        android:id="@+id/imageView4"
+        android:layout_above="@+id/userInfo"
+        android:layout_toRightOf="@+id/backtoLog"
+        android:layout_toEndOf="@+id/backtoLog"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp" />
+
+    <Button
+        android:text="日记"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#544221"
+        android:paddingBottom="30dp"
+        android:layout_width="177dp"
+        android:layout_height="175dp"
+        android:id="@+id/diarybutton"
+        android:background="@drawable/section"
+        android:layout_below="@+id/userInfo"
+        android:layout_alignRight="@+id/paintBut"
+        android:layout_alignEnd="@+id/paintBut" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="79dp"
+        app:srcCompat="@drawable/kuang"
+        android:id="@+id/imageView5"
+        android:layout_below="@+id/userName"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="用户名"
+        android:layout_width="250dp"
+        android:textSize="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="2dp"
+        android:textColor="#71622d"
+        android:layout_height="45dp"
+        android:id="@+id/userInfo"
+        android:layout_above="@+id/checkBut"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+
+        android:background="@drawable/section"
+
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:textSize="30dp"
+        android:id="@+id/checkBut"
+        android:shadowColor="#edcc92"
+        android:textStyle="bold"
+        android:textColor="#544221"
+        android:paddingBottom="30dp"
+        android:layout_marginTop="128dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="账本" />
+
+</RelativeLayout>

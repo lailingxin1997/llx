@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#c2a071"
+    >
+
+    <TextView
+        android:text="欢迎加入糊涂神"
+        android:textColor="#40340d"
+        android:textSize="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="用户名"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="68dp"
+        android:id="@+id/user"
+        android:fontFamily="casual"
+        android:textSize="25dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="用户名为4到8位"
+        android:id="@+id/username"
+        android:background="@drawable/shape_corner"
+        android:textSize="25dp"
+        android:paddingLeft="10dp"
+        android:layout_alignTop="@+id/user"
+        android:layout_alignLeft="@+id/userkey"
+        android:layout_alignStart="@+id/userkey" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="密码为8到12位"
+        android:id="@+id/userkey"
+        android:textSize="25dp"
+        android:background="@drawable/shape_corner"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_alignTop="@+id/key"
+        android:layout_toRightOf="@+id/user"
+        android:layout_toEndOf="@+id/user" />
+
+    <TextView
+        android:text="密码"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/key"
+        android:textSize="25dp"
+        android:fontFamily="casual"
+        android:layout_below="@+id/username"
+        android:layout_alignLeft="@+id/user"
+        android:layout_alignStart="@+id/user" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/userkey"
+        android:layout_alignParentStart="true">
+        <View
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            />
+
+        <Button
+            android:text="返回"
+            android:layout_width="140dp"
+            android:paddingTop="10dp"
+            android:layout_height="163dp"
+            android:layout_alignBottom="@+id/regist"
+            android:layout_marginRight="28dp"
+            android:id="@+id/backlog"
+            android:background="@drawable/buttonlog"
+            android:layout_alignTop="@+id/regist"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/userkey"
+            android:layout_alignEnd="@+id/userkey"
+            android:layout_toStartOf="@+id/username"
+            android:layout_weight="0.69"
+            android:textSize="30sp" />
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            />
+        <Button
+            android:text="注册"
+            android:paddingTop="10dp"
+            android:layout_width="140dp"
+            android:layout_height="163dp"
+            android:id="@+id/regist"
+            android:background="@drawable/buttonlog"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/userkey"
+            android:layout_alignEnd="@+id/userkey"
+            android:textSize="30sp" />
+        <View
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
